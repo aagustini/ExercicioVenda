@@ -15,6 +15,10 @@ public class CadastroProdutos {
         //lista.add( new Produto(umCod, umNome, umPreco) );
     }
 
+    public void inserir(Produto novo) {
+        lista.add(novo);
+    }
+
     public Produto pesquisar(int cod) {
         for (Produto p: lista) {
             if (p.getCodigo() == cod)

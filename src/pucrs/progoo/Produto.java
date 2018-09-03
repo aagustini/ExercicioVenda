@@ -19,9 +19,9 @@ public class Produto {
 
     @Override
     public String toString() {
-        return String.format("(%3d) %20s %6.2f ",
+        return String.format("(%3d) %-25s %6.2f ",
                 codigo,
-                nome,
+                getNome(),
                 preco);
     }
 }
